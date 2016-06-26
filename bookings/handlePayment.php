@@ -129,35 +129,6 @@ if ($action == 'process') {
 // 		// return  $emailContent;	
 // // }
 
-// email to client function (require varify)
-function emailEmitting($emailContent, $receiver) {
-
-	$emailBody       = "Dear ".$receiver.",<br><br>";
-	$emailBody      .= $emailContent['body'];
-// 	// $emailBody      .= '<br><br>'.$bookprs->invoiceHtml;
-	// Config break, hard code
-	$emailBody .= '<br><br>Regards,<br>'.'Spark - Book the Room Tonight'.'<br>'.'97009865';
-	$emailBody .= '<br><br><font style=\"color:#F00; font-size:10px;\">[ You will need to carry a print out of this e-mail and present it to the hotel on arrival and check-in. This e-mail is the confirmation voucher for your booking. ]</font>';
-	// $returnMsg = $bsiMail->sendEMail($email, $getemailcontent['subject'], $emailBody, $booking_id, 1);
-// 	if($returnMsg == true){		
-// 		$notifyEmailSubject = "Booking no.".$booking_id." - Notification of Room Booking by ".$customer;
-// 		var_dump($getemailcontent);				
-// 		// this one probably send email to hotel
-// 		$bsiMail->sendEMail($bsiCore->config['conf_portal_email'], $notifyEmailSubject, $bookprs->invoiceHtml);	
-// 		// this one probably send email to client
-// 		$bsiMail->sendEMail($bookprs->bookingArray['email_addr'], $notifyEmailSubject, $bookprs->invoiceHtml); 	
-// 		//$bsiCore->sendtestEMail($bsiCore->config['conf_portal_email'], $notifyEmailSubject, $bookprs->invoiceHtml);	
-// 		//$bsiCore->sendtestEMail($bookprs->bookingArray['email_addr'], $notifyEmailSubject, $bookprs->invoiceHtml); 	
-// 		header('Location: booking-confirm.php?success_code=1');
-// 		die;
-// 	}else {		
-// 		header('Location: booking-failure.php?error_code=25');
-// 		die;
-// 	}
-	// var_dump($returnMsg);
-	// var_dump($emailBody);
-}
-
 
 $Paypal = new paypal_class();
 // redirect point after payment
@@ -198,7 +169,6 @@ switch ($action) {
 	break;
 	case 'success':
 		// booking need to fetch again if success
-
 		header("Location:create.php");
 	break;
 	case 'failed':
@@ -255,19 +225,7 @@ switch ($action) {
 				</tr>
 		  </tbody>
 		 </table>';
-		mysql_query("UPDATE bsi_invoice SET invoice = '".$invoiceHTML."' WHERE booking_id='".$p->ipn_data['invoice']."'");
-
-		$emailBody = "Dear ".$invoiceROWS['client_name'].",<br><br>";
-		$emailBody .= html_entity_decode($bsiMail->emailContent['body'])."<br><br>";
-		$emailBody .= $invoiceHTML;
-		$emailBody .= "<br><br>Regards,<br>".$bsiCore->config['conf_portal_name'].'<br>'.$bsiCore->config['conf_portal_phone'];
-		$emailBody .= "<br><br><font style=\"color:#F00; font-size:10px;\">[ You will need to carry a print out of this e-mail and present it to the hotel on arrival and check-in. This e-mail is the confirmation voucher for your booking. ]</font>";
-		$bsiMail->sendEMail($invoiceROWS['client_email'], $bsiMail->emailContent['subject'], $emailBody, $p->ipn_data['invoice'], 1);
-
-		/* Notify Email for Hotel about Booking */
-
-		$notifyEmailSubject = "Booking no.".$p->ipn_data['invoice']." - Notification of Room Booking by ".$invoiceROWS['client_name'];
-		$bsiMail->sendEMail($bsiCore->config['conf_portal_email'], $notifyEmailSubject, $invoiceHTML);			
+		mysql_query("UPDATE bsi_invoice SET invoice = '".$invoiceHTML."' WHERE booking_id='".$p->ipn_data['invoice']."'");	
 	}
 	break;
 }

@@ -27,6 +27,11 @@ class Model extends Connections {
 		$s->execute(array(':field' => "$value"));
 		return (object) $s->fetchAll();
 	}
+	public function priceplan_find_by($field, $value) {
+		$s = $this->_get("SELECT * FROM $this->table WHERE $field = :field AND capacity_id <> '1001'");
+		$s->execute(array(':field' => "$value"));
+		return (object) $s->fetchAll();
+	}
 	public function find_by_and($field1, $value1, $field2, $value2) {
 		$s = $this->_get("SELECT * FROM $this->table WHERE $field1 = :field1 AND $field2 = :field2");
 		$s->execute(array( ':field1'=> "$value1", ':field2'=>"$value2" ));
