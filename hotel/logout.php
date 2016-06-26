@@ -1,0 +1,10 @@
+<?php 
+session_start();
+if(isset($_SESSION['hpass'])){
+	unset($_SESSION['hpass']);
+	unset($_SESSION['hhid']);
+}
+sleep(3);
+header('location:login.php');
+exit;
+?> 

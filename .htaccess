@@ -1,0 +1,8 @@
+Options +FollowSymlinks
+RewriteEngine On
+RewriteRule ^(admin|hotel)($|/) - [L]
+RewriteRule ^([^/.]+)/?$ top_destination.php?city=$1 [QSA]
+RewriteRule ^([review]+)/([^/.]+)/?$ review_submit.php?rkey=$2 [QSA]
+RewriteRule ^([^/.]+)/([^/.]+)-([0-9]+)\.html$ details.php?hotel_id=$3 [QSA]
+RewriteRule ^([^/.]+)-([0-9]+)\.html$ index1.php?page=$2 [QSA]
+php_value error_reporting 22527

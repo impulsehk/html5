@@ -1,0 +1,1724 @@
+/* line 31, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+body {
+  text-align: justify;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  color: #ffffff;
+}
+/* line 36, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+body p {
+  margin-bottom: 2.5rem;
+}
+
+/* line 56, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+hr {
+  border-color: #871d68;
+}
+
+/* line 59, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.hidden {
+  padding: 0 !important;
+  margin: 0 !important;
+  border-width: 0 !important;
+  display: none !important;
+}
+
+/* line 65, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.last-half,
+.first-half {
+  -webkit-box-flex: 0 !important;
+  -webkit-flex: 0 1 48% !important;
+      -ms-flex: 0 1 48% !important;
+          flex: 0 1 48% !important;
+  margin-right: 4%;
+}
+
+/* line 70, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.last-half {
+  margin-right: 0;
+}
+
+/* line 73, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.full {
+  -webkit-box-flex: 1 !important;
+  -webkit-flex: 1 0 100% !important;
+      -ms-flex: 1 0 100% !important;
+          flex: 1 0 100% !important;
+  width: 100% !important;
+}
+
+/* line 84, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.icon-back {
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border-bottom: 4px solid #ffffff;
+  border-left: 4px solid #ffffff;
+  background: transparent;
+}
+
+/* line 93, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.bg-primary {
+  background-color: #bc216f;
+  border-radius: 4px;
+}
+
+/* line 97, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+button.dropdown-toggle.jumbo-box {
+  margin: 0;
+}
+
+/* line 100, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.bootstrap-select .dropdown-toggle.jumbo-box:focus {
+  outline: none !important;
+}
+
+/* line 103, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.btn:focus {
+  outline: none;
+  color: #ffffff;
+}
+
+/* line 107, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.contact-form {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0;
+      -ms-flex: 1 0;
+          flex: 1 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column wrap;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+}
+/* line 111, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.contact-form label {
+  color: #888;
+}
+
+/* line 118, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.contact-form .form-group > * {
+  display: block;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 100%;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
+  width: 100% !important;
+  margin-bottom: 1rem !important;
+}
+
+/* line 125, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none !important;
+  outline: none !important;
+}
+
+/* line 129, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+textarea[type="textarea"].form-control,
+input[type="text"].form-control {
+  background-color: #2d2c2f;
+  border-color: #000;
+  color: #eee;
+}
+/* line 134, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+textarea[type="textarea"].form-control:focus,
+input[type="text"].form-control:focus {
+  border-color: #871d68;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #bc216f;
+}
+
+/** ** ** ** ** ** ** ** ** LAYOUT ** ** ** ** ** ** ** ** **/
+/* line 142, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.app-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  min-height: 100%;
+  max-width: 100%;
+  background: #19181b;
+}
+
+/* line 150, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.navbar-container {
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 100%;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  min-height: 6rem;
+  height: 6rem;
+  background: #871d68;
+  color: #ffffff;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 160, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.jumbotron-container {
+  -webkit-box-ordinal-group: 3;
+  -webkit-order: 2;
+      -ms-flex-order: 2;
+          order: 2;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 100%;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  height: 88vh;
+  position: relative;
+}
+
+/* line 166, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.carousel-container {
+  -webkit-box-ordinal-group: 3;
+  -webkit-order: 5;
+      -ms-flex-order: 5;
+          order: 5;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 100%;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  height: 35.5rem;
+  position: relative;
+  padding-top: 8.5vh;
+}
+.carousel-container.hostel {
+  order: 2;
+}
+
+/* line 175, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.content-container {
+  -webkit-box-ordinal-group: 5;
+  -webkit-order: 4;
+      -ms-flex-order: 4;
+          order: 4;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 100%;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  padding: 2rem .5rem;
+
+}
+
+/* line 181, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.map-container {
+  -webkit-box-ordinal-group: 6;
+  -webkit-order: 5;
+      -ms-flex-order: 5;
+          order: 5;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 100%;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  padding: 2rem 1rem;
+  min-height: 4rem;
+}
+
+/* line 188, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.footer-container {
+  -webkit-box-ordinal-group: 100;
+  -webkit-order: 99;
+      -ms-flex-order: 99;
+          order: 99;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 100%;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  background: #2d2c2f;
+}
+
+/** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **/
+/** ** ** ** ** ** ** ** * BUTTON ** ** ** ** ** ** ** ** **/
+/* line 197, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.circle-box {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #84d8d0;
+  border-radius: 50%;
+  color: #84d8d0;
+  background: none;
+  color: #ccc;
+  font-size: 2.5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/* line 207, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.circle-box p {
+  margin: 1rem 0 0;
+}
+/* line 208, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.circle-box span {
+  font-size: 1rem;
+}
+
+/* line 210, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.paypal-button,
+.go-button {
+  background: #bc216f;
+  color: #ffffff;
+  border-width: 0;
+}
+/* line 215, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.paypal-button:active, .paypal-button:hover, .paypal-button:visited,
+.go-button:active,
+.go-button:hover,
+.go-button:visited {
+  background: #871d68;
+  color: #ffffff;
+}
+
+/* line 220, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.paypal-button {
+  background: #48a0f9;
+}
+
+/* line 223, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.block-button-box {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/* line 234, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.block-button-box a {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0;
+      -ms-flex: 1 0;
+          flex: 1 0;
+}
+/* line 237, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.block-button-box a:first-child {
+  padding: 0 1rem;
+  background-color: rgba(132, 216, 208, 0.6);
+}
+/* line 241, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.block-button-box a:last-child {
+  padding: 0 1rem 0 0;
+  background-color: rgba(188, 33, 111, 0.6);
+}
+/* line 246, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.block-button-box .button {
+  margin: auto;
+  text-align: center;
+  vertical-align: center;
+  width: 10rem;
+  height: 10rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column wrap;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 4rem;
+  color: #ffffff;
+  height: 10rem;
+}
+/* line 262, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.block-button-box .button p {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0;
+      -ms-flex: 1 0;
+          flex: 1 0;
+  margin: 0;
+}
+/* line 266, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.block-button-box .button p:last-child {
+  -webkit-box-flex: 2;
+  -webkit-flex: 2 0;
+      -ms-flex: 2 0;
+          flex: 2 0;
+  font-size: 3rem;
+}
+
+/* line 272, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.price-box {
+  -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
+          align-self: flex-start;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+/* line 290, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.price-box .price-items {
+  min-height: 3rem;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 auto;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  line-height: 2.63rem;
+  color: #ffffff;
+  padding: 0 5px 0;
+}
+.price-box .price-items:first-child {
+  padding-left: 0;
+}
+/* line 296, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.price-box .price-items div {
+  font-size: 1.8rem;
+  margin: 0;
+}
+/* line 300, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.price-box .price-items .price-label {
+  float: right;
+  margin-bottom: .5rem;
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+}
+/* line 305, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.price-box .price-items .clock-icon {
+  float: left;
+  height: 1.8rem;
+  width: 1.8rem;
+  -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
+          align-self: flex-start;
+  color: #fff;
+  margin-top: 3px;
+  margin-right: 5px;
+}
+/* line 312, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.price-box .price-items .clock-icon.one {
+  background-image: url(../gallery/icon-one-hr.svg);
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+/* line 315, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.price-box .price-items .clock-icon.three {
+  background-image: url(../gallery/icon-three-hr.svg);
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+/* line 318, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.price-box .price-items .clock-icon.twenty-four {
+  background-image: url(../gallery/icon-24-hr.svg);
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* line 323, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.tags-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 50%;
+}
+/* line 329, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.tags-box .tag {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  border-radius: 3px;
+  text-align: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0;
+      -ms-flex: 1 0;
+          flex: 1 0;
+  max-height: 2.63rem;
+  margin: 0 .5rem;
+  background-color: #bc216f;
+  opacity: .3;
+}
+/* line 340, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.tags-box .tag.available {
+  opacity: 1;
+}
+
+/* line 344, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.instant-checkin-box {
+  width: 10rem;
+  height: 10rem;
+  background: transparent;
+  z-index: 10;
+  vertical-align: center;
+  text-align: center;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 1rem;
+}
+
+/* line 357, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.rating {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 2.5rem;
+}
+/* line 363, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.rating .dots {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 2rem;
+      -ms-flex: 0 0 2rem;
+          flex: 0 0 2rem;
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid #84d8d0;
+  border-radius: 50%;
+  color: #84d8d0;
+  background: #84d8d0;
+  opacity: .3;
+}
+/* line 368, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.rating .dots.fill {
+  opacity: 1;
+}
+
+/** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **/
+/** ** ** ** ** ** ** ** ** AFFIX ** ** ** ** ** ** ** ** **/
+/* line 376, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+#nav-affix {
+  z-index: 99;
+  position: absolute;
+  top: 6rem;
+  width: 100%;
+  height: 8.5vh;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+}
+
+/* line 387, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+#nav-affix > div {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0;
+      -ms-flex: 1 0;
+          flex: 1 0;
+  height: inherit;
+}
+
+/* line 391, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+#nav-affix > div:first-child {
+  max-width: 61.8%;
+  background-color: #2d2c2f;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/* line 397, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+#nav-affix > div:first-child div {
+  height: 100%;
+}
+/* line 400, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+#nav-affix > div:first-child a.back,
+#nav-affix > div:first-child div:first-child {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0;
+      -ms-flex: 1 0;
+          flex: 1 0;
+  max-width: 5.5rem;
+}
+/* line 404, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+#nav-affix > div:first-child a.back .icon-back,
+#nav-affix > div:first-child div:first-child .icon-back {
+  top: 30%;
+  left: 30%;
+  width: 2rem;
+  height: 2rem;
+  -webkit-box-flex: 0;
+  -webkit-flex: none;
+      -ms-flex: none;
+          flex: none;
+  background: transparent;
+  padding: 0;
+}
+/* line 414, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+#nav-affix > div:first-child div:last-child {
+  -webkit-box-flex: 3;
+  -webkit-flex: 3 0;
+      -ms-flex: 3 0;
+          flex: 3 0;
+  background: #19181b;
+  line-height: 8.5vh;
+  padding: 0 1rem;
+  font-size: 2rem;
+}
+
+/* line 422, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+#nav-affix > div:last-child {
+  max-width: 38.2%;
+  background-color: #2d2c2f;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/* line 430, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+#nav-affix > div:last-child > div {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0;
+      -ms-flex: 1 0;
+          flex: 1 0;
+  max-width: 10%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/* line 435, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+#nav-affix > div:last-child > div .seperator {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0;
+      -ms-flex: 1 0;
+          flex: 1 0;
+  border: 1px solid #ffffff;
+  height: 2px;
+}
+/* line 441, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+#nav-affix > div:last-child > div:last-child, #nav-affix > div:last-child > div:first-child {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0;
+      -ms-flex: 1 0;
+          flex: 1 0;
+  max-width: 45%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/* line 448, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+#nav-affix > div:last-child > div:last-child span, #nav-affix > div:last-child > div:first-child span {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 100%;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+}
+/* line 451, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+#nav-affix > div:last-child > div:last-child span:first-child, #nav-affix > div:last-child > div:first-child span:first-child {
+  max-height: 2.2rem;
+  font-size: 1.4rem;
+}
+/* line 455, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+#nav-affix > div:last-child > div:last-child span:last-child, #nav-affix > div:last-child > div:first-child span:last-child {
+  font-size: 2.4rem;
+}
+
+/* line 461, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.affix-top {
+  top: 0;
+}
+
+/* line 464, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.affix {
+  position: fixed !important;
+  top: 0 !important;
+}
+
+/** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **/
+/** ** ** ** ** ** ** ** * NAVBAR ** ** ** ** ** ** ** ** **/
+/* line 472, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.navbar-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+/* line 477, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.navbox {
+  position: relative;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0;
+      -ms-flex: 1 0;
+          flex: 1 0;
+  max-height: 6rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 485, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.navbox-brand {
+  -webkit-box-flex: 2;
+  -webkit-flex: 2 0;
+      -ms-flex: 2 0;
+          flex: 2 0;
+  max-width: 10rem;
+  height: 6rem;
+  margin: 0 auto;
+  background-image: url(../gallery/brand-icon.png);
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* line 492, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.navbar-toggle.menu-icon {
+  margin: 0 auto;
+  background-image: url(../gallery/menu-button.png);
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* line 496, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.lang-icon {
+  margin: 0 auto;
+  width: 22px;
+  height: 20px;
+  background-image: url(../gallery/lang.png);
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* line 502, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.navbar {
+  position: absolute;
+  top: 6rem;
+  min-height: 0;
+  z-index: 100;
+  width: 100%;
+  border-width: 0px;
+}
+
+/* line 510, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+#nav-main-menu {
+  background-color: #2d2c2f;
+}
+/* line 512, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+#nav-main-menu .navbar-nav > li {
+  height: 5.5rem;
+}
+/* line 515, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+#nav-main-menu .navbar-nav > li > a {
+  color: #ffffff;
+  font-size: 1.8rem;
+  line-height: 3.6rem;
+}
+/* line 520, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+#nav-main-menu .navbar-nav > li:nth-child(2n) {
+  background-color: #2d2c2f;
+}
+/* line 523, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+#nav-main-menu .navbar-nav > li:nth-child(2n+1) {
+  background-color: #2d2c2f;
+}
+
+/** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **/
+/** ** ** ** ** ** ** ** * JUMBOTRON ** ** ** ** ** ** ** **/
+/* line 530, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.jumbotron-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: inherit;
+  background: -webkit-linear-gradient(bottom, #19181b 2.87%, rgba(25, 24, 27, 0.218) 51.8%, rgba(25, 24, 27, 0.06));
+  background: linear-gradient(to top, #19181b 2.87%, rgba(25, 24, 27, 0.218) 51.8%, rgba(25, 24, 27, 0.06));
+  padding: 2rem 1.5rem 1rem;
+}
+/* line 538, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.jumbotron-overlay .form-box {
+  margin-top: 25%;
+  background: transparent;
+}
+
+/* line 543, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.jumbotron-image {
+  height: 100%;
+  background-image: url(../gallery/index-jumbotron.png);
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 548, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.jumbo-box {
+  min-height: 8.5vh;
+  font-size: 1.6rem;
+  color: #ffffff !important;
+  background-color: #bc216f;
+  margin-bottom: 1rem;
+}
+/* line 549, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.jumbo-box:focus {
+  outline: none;
+  color: #ffffff;
+}
+
+/* line 556, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.jumbotron-container .form-box-content div:last-child {
+  min-height: 9vh;
+  font-size: 2rem;
+  line-height: 9vh;
+}
+/* line 560, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.jumbotron-container .form-box-content div:last-child input[type='submit'] {
+  min-height: inherit;
+  font-size: 2rem;
+}
+
+/* line 566, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.bootstrap-select.btn-group .dropdown-menu.open {
+  background-color: #bc216f;
+}
+/* line 569, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.bootstrap-select.btn-group .dropdown-menu li:first-child {
+  border-top: 1px dashed #2d2c2f;
+}
+/* line 572, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.bootstrap-select.btn-group .dropdown-menu li {
+  min-height: 8vh;
+  border-bottom: 1px dashed #2d2c2f;
+  background-color: #bc216f;
+}
+/* line 576, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.bootstrap-select.btn-group .dropdown-menu li a {
+  min-height: 8vh;
+  line-height: 8vh;
+  color: #ffffff;
+  background-color: #bc216f;
+}
+/* line 582, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.bootstrap-select.btn-group .dropdown-menu li a:focus, .bootstrap-select.btn-group .dropdown-menu li a:hover {
+  background-color: #bc216f;
+}
+
+/** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **/
+/** ** ** ** ** ** ** ** * CAROUSEL  ** ** ** ** ** ** ** **/
+/* line 590, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.carousel-overlay {
+  position: absolute;
+  top: 8.5vh;
+  left: 0;
+  width: 100%;
+  height: 25vh;
+  background: -webkit-linear-gradient(top, rgba(25, 24, 27, 1) 6.18%, rgba(25, 24, 27, 0.418) 61.8%, rgba(25, 24, 27, 0) 98%);
+  background: linear-gradient(to bottom, rgba(25, 24, 27, 1) 6.18%, rgba(25, 24, 27, 0.418) 61.8%, rgba(25, 24, 27, 0) 98%);
+  padding: 2rem 1.5rem 1rem;
+  z-index: 10;
+}
+/* line 599, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.carousel-overlay h3 {
+  margin-top: 2rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: .618rem;
+  border-bottom: 1px solid #871d68;
+}
+/* line 608, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.carousel-overlay h3.district {
+  padding-bottom: 3rem;
+}
+/* line 609, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.carousel-overlay p {
+  color: #ddd;
+}
+
+/* line 613, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.carousel-image {
+  height: 100%;
+  background-image: url(../gallery/cityImage/1447814256_6073487135_e83e1b7398_b.jpg);
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 618, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.checkin-box,
+.form-box {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  -webkit-box-ordinal-group: 6;
+  -webkit-order: 5;
+      -ms-flex-order: 5;
+          order: 5;
+  width: 100%;
+  z-index: 5;
+  background: rgba(0, 0, 0, 0.4);
+  color: #ffffff;
+  border-radius: 1rem;
+}
+
+/* line 628, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.form-box {
+  height: 25.5rem;
+}
+
+/* line 631, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.checkin-box.payment,
+.checkin-box.booking {
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1;
+  background: #19181b;
+}
+/* line 635, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.checkin-box.payment div[type*="submit"],
+.checkin-box.booking div[type*="submit"] {
+  height: 7rem;
+  font-size: 4rem;
+}
+
+/* line 640, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.checkin-box.payment {
+  -webkit-box-ordinal-group: 11;
+  -webkit-order: 10;
+      -ms-flex-order: 10;
+          order: 10;
+}
+
+/* FORM BOX */
+/* line 645, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.form-box h4 {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  margin: 0;
+  padding: 1rem;
+  background-color: #871d68;
+}
+
+/* line 652, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.form-box-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  padding: 1rem;
+  color: #ffffff;
+}
+
+/* line 658, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.form-box-content > div {
+  -webkit-box-flex: 2;
+  -webkit-flex: 2 1 100%;
+      -ms-flex: 2 1 100%;
+          flex: 2 1 100%;
+  margin-bottom: .5rem;
+}
+
+/* line 662, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.form-box-content div:last-child {
+  margin-top: 1rem;
+}
+
+/** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **/
+/** ** ** ** ** ** ** HOSTEL INDEX LINK ** ** ** ** ** ** **/
+/* line 670, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.content-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column wrap;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  padding-top: 8.5vh;
+}
+
+/* line 674, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.hostel-box {
+  position: relative;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 18rem;
+  margin: 5px 0;
+  background-size: 100%;
+}
+
+/* line 681, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.link-overlay {
+  height: 18rem;
+}
+/* line 684, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.link-overlay:link, .link-overlay:visited, .link-overlay:hover, .link-overlay:active {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* line 689, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.link-overlay-inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: -webkit-linear-gradient(bottom, #19181b 9.87%, rgba(25, 24, 27, 0.518) 61.8%, rgba(25, 24, 27, 0.16));
+  background: linear-gradient(to top, #19181b 9.87%, rgba(25, 24, 27, 0.5 18) 61.8%, rgba(25, 24, 27, 0.16));
+  padding: 1rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: column-reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+/* line 697, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.link-overlay-inner .rating {
+  margin-top: 1.7rem;
+  width: 14rem;
+}
+/* line 701, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.link-overlay-inner .button {
+  border: 2px solid #ffffff;
+  border-radius: 1rem;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: center;
+  width: 14rem;
+  height: 5rem;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  padding: 1rem;
+  margin-top: .3rem;
+}
+/* line 52, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.link-overlay-inner .button:link, .link-overlay-inner .button:visited, .link-overlay-inner .button:hover, .link-overlay-inner .button:active {
+  text-decoration: none;
+}
+/* line 710, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.link-overlay-inner h4 {
+  display: block;
+  display: -webkit-box;
+  max-height: 4.2rem;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  margin: .6rem 0;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+/* line 714, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.link-overlay-inner p {
+  font-size: 1.4rem;
+  margin: 0;
+  color: #aaa;
+}
+
+/* line 722, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.district-index .link-overlay-inner {
+  background: -webkit-linear-gradient(bottom, #19181b 9.87%, rgba(25, 24, 27, 0.382) 42.84%, rgba(25, 24, 27, 0) 89.53%);
+  background: linear-gradient(to top, #19181b 9.87%, rgba(25, 24, 27, 0.382) 42.84%, rgba(25, 24, 27, 0) 89.53%);
+}
+/* line 724, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.district-index .link-overlay-inner h4 {
+  font-size: 3.5rem;
+  line-height: 4.1rem;
+}
+
+/* line 731, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.content-container.pages {
+  color: #ccc;
+}
+/* line 733, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.content-container.pages h4 {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0;
+      -ms-flex: 1 0;
+          flex: 1 0;
+  padding: 1rem 1rem;
+  color: #bc216f;
+}
+/* line 738, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.content-container.pages p {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0;
+      -ms-flex: 1 0;
+          flex: 1 0;
+  padding: 1rem 1rem;
+  text-align: justify;
+  color: #ffffff;
+}
+/* line 744, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.content-container.pages li.list-group-item {
+  background: #19181b;
+  border: 2px solid #871d68;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  color: #f0f0f0;
+}
+/* line 750, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.content-container.pages li.list-group-item:first-child {
+  border-top-width: 2px;
+}
+/* line 753, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.content-container.pages li.list-group-item:last-child {
+  border-bottom-width: 2px;
+}
+/* line 757, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.content-container.pages div[class*="content-"] {
+  display: none;
+}
+/* line 759, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.content-container.pages div[class*="content-"].active {
+  display: block;
+}
+
+/** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **/
+/** ** ** ** ** ** ** * GOOGLE MAP MOCK ** ** ** ** ** ** **/
+/* line 770, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.map.btn {
+  background-image: url(../gallery/map-10.svg);
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: fixed;
+  bottom: 6vh;
+  right: 6vw;
+  z-index: 110;
+  width: 6rem;
+  height: 6.5rem;
+  background-color: transparent;
+}
+/* line 779, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.map.btn:active, .map.btn:focus, .map.btn:visited, .map.btn:hover {
+  outline: none;
+}
+
+/* line 785, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.map-wrapper {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  z-index: -10;
+  -webkit-transition: opacity .6s ease-in, z-index .01s linear .6s;
+          transition: opacity .6s ease-in, z-index .01s linear .6s;
+}
+/* line 794, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.map-wrapper .google-map {
+  top: 15vh;
+}
+
+/* line 798, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.google-map {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* line 804, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.map-wrapper.active {
+  z-index: 100;
+  opacity: 1;
+  -webkit-transition: opacity .6s ease-in .01s, z-index .01s linear 0s;
+          transition: opacity .6s ease-in .01s, z-index .01s linear 0s;
+}
+
+/** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **/
+/** ** ** ** ** ** ** ** * BOOKING * ** ** ** ** ** ** ** **/
+/* line 815, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.overlay-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  width: 100vw;
+  height: 100vh;
+  padding: 2rem 1.5rem 4rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  -webkit-transition: opacity .6s ease-in, z-index .01s linear .6s;
+          transition: opacity .6s ease-in, z-index .01s linear .6s;
+}
+/* line 826, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.overlay-wrapper .note-box {
+  background-color: #19181b;
+  border-radius: .5rem;
+  width: 100%;
+  height: 90%;
+  overflow-y: scroll;
+}
+/* line 832, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.overlay-wrapper .note-box p,
+.overlay-wrapper .note-box h4 {
+  margin: 0;
+  padding: 1.5rem 0 1rem;
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+/* line 840, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.overlay-wrapper .note-box p {
+  padding: 0 2rem;
+  text-transform: none;
+  text-align: justify;
+  font-size: 1.6rem;
+}
+/* line 846, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.overlay-wrapper .note-box .close-button {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  margin-left: -25%;
+  border-radius: 5px;
+  z-index: 101;
+  width: 50%;
+  height: 5rem;
+  line-height: 5rem;
+  background-color: #bc216f;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* line 863, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.overlay-wrapper.active {
+  z-index: 100;
+  opacity: 1;
+  -webkit-transition: opacity .6s ease-in .01s, z-index .01s linear 0s;
+          transition: opacity .6s ease-in .01s, z-index .01s linear 0s;
+}
+
+/* line 870, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.return-condition-button span,
+.note-button span {
+  color: #bc216f;
+}
+
+/* line 874, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.address {
+  color: #ccc;
+}
+
+/* line 877, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.list-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+/* line 881, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.list-row div {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 auto;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+}
+/* line 887, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.list-row div:last-child {
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+}
+
+/* line 892, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.content-form p {
+  color: #ffffff;
+}
+
+/* line 896, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.title-container {
+  -webkit-box-ordinal-group: 3;
+  -webkit-order: 2;
+      -ms-flex-order: 2;
+          order: 2;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+  width: 100%;
+  padding: 2rem 1rem;
+}
+/* line 901, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.title-container p {
+  font-size: 1.2rem;
+  color: #bc216f;
+  margin-bottom: 0;
+}
+
+/* line 907, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.nav-justified {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 100%;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+/* line 913, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.nav-justified li {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0;
+      -ms-flex: 1 0;
+          flex: 1 0;
+  margin: 0 !important;
+  border: 2px solid #bc216f;
+  border-left: 1px solid #bc216f;
+  border-right: 1px solid #bc216f;
+  padding: 1rem;
+  color: #bc216f;
+}
+/* line 921, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.nav-justified li:first-child {
+  border-left-width: 2px;
+  border-right-width: 1px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+/* line 927, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.nav-justified li:last-child {
+  border-left-width: 1px;
+  border-right-width: 2px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+/* line 933, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.nav-justified li.active {
+  background-color: #bc216f;
+  color: #ffffff;
+}
+
+/* line 939, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.content-container [class*="content-"] {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0;
+      -ms-flex: 1 0;
+          flex: 1 0;
+  width: 100%;
+  padding: 4rem 1rem 1rem;
+  text-align: justify;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+}
+/* line 949, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.content-container [class*="content-"] p {
+  margin-bottom: 2.5rem;
+}
+/* line 952, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.content-container [class*="content-"].content-details {
+  -webkit-box-ordinal-group: 4;
+  -webkit-order: 3;
+      -ms-flex-order: 3;
+          order: 3;
+  padding-top: 1rem;
+}
+/* line 955, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.content-container [class*="content-"].content-details h3 {
+  margin-top: 0;
+  text-align: center;
+}
+
+/* line 961, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.checkin-box {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0;
+      -ms-flex: 1 0;
+          flex: 1 0;
+}
+
+/* line 964, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.content-terms {
+  -webkit-box-ordinal-group: 10;
+  -webkit-order: 9;
+      -ms-flex-order: 9;
+          order: 9;
+  padding-top: 5px !important;
+}
+
+/* line 968, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.terms {
+  -webkit-box-ordinal-group: 10;
+  -webkit-order: 9;
+      -ms-flex-order: 9;
+          order: 9;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+/* line 971, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.terms .words {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  padding-left: 5px;
+}
+/* line 975, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.terms .roundedOne {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 28px;
+      -ms-flex: 0 0 28px;
+          flex: 0 0 28px;
+}
+
+/** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **/
+/** ** ** ** ** ** ** ** FOOTER MOCK ** ** ** ** ** ** ** **/
+/* line 984, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.footer-mock {
+  width: 100%;
+  height: 100%;
+  background-image: url(../gallery/footer-mock.png);
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* line 989, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.footer-container {
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #aaa;
+  padding: .5rem 2rem;
+}
+/* line 999, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.footer-container div[class^="-box"] {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 100%;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
+}
+/* line 1002, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.footer-container .cs-box {
+  width: 100%;
+  border-bottom: 2px solid #871d68;
+}
+/* line 1005, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.footer-container .cs-box h4 {
+  font-size: 2rem;
+  color: #871d68;
+  text-transform: uppercase;
+}
+/* line 1010, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.footer-container .cs-box p {
+  margin-bottom: 1.5rem;
+}
+/* line 1015, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.footer-container .social-box {
+  width: 100%;
+  padding: 1rem 0;
+  min-height: 60px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/* line 1023, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.footer-container .social-box #fb {
+  background-image: url(../gallery/facebook.png);
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+/* line 1024, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.footer-container .social-box #tw {
+  background-image: url(../gallery/twitter.png);
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+/* line 1025, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.footer-container .social-box #gp {
+  background-image: url(../gallery/paypal_.svg);
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+/* line 1026, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.footer-container .social-box .social-icon {
+  margin: 0 .5rem;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 6rem;
+      -ms-flex: 0 0 6rem;
+          flex: 0 0 6rem;
+  max-width: 4rem;
+  max-height: 4rem;
+}
+/* line 1033, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.footer-container .copyright-box {
+  font-size: 1.2rem;
+}
+/* line 1036, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.footer-container .button-space-box {
+  min-height: 10rem;
+}
+
+/** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **/
+/* line 1042, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.content-facilities {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+/* line 1047, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.content-facilities .fac-icon {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 4rem;
+      -ms-flex: 1 0 4rem;
+          flex: 1 0 4rem;
+  width: 4rem;
+  height: 4rem;
+  max-height: 4rem;
+  max-width: 4rem;
+  margin: 0 1rem;
+}
+/* line 1055, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.content-facilities .fac-icon:last-child {
+  margin-right: 0;
+}
+/* line 1058, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.content-facilities .fac-icon:first-child {
+  margin-left: 0;
+}
+/* line 1064, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.content-facilities .icon-wifi {
+  background-image: url(../gallery/wifi.svg);
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+/* line 1064, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.content-facilities .icon-towel {
+  background-image: url(../gallery/towel.svg);
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+/* line 1064, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.content-facilities .icon-ac {
+  background-image: url(../gallery/ac.svg);
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+/* line 1064, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.content-facilities .icon-safe {
+  background-image: url(../gallery/safe.svg);
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.content-facilities .icon-stairs {
+  background-image: url(../gallery/stairs.svg);
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.content-facilities .icon-lift {
+  background-image: url(../gallery/lift.svg);
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* line 1070, /Users/GordonYip/webDev/spark/app/assets/stylesheets/component.scss */
+.facilities-mock {
+  width: 100%;
+  height: 10rem;
+  max-width: 40rem;
+  background-image: url(../gallery/facilities-mock.png);
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.nav > li > a:hover, .nav > li > a:focus {
+  background-color: rgb(188,33,111);
+}
+#map_canvas {
+  min-height: 400px !important;
+}
+.content-terms {
+  -webkit-box-ordinal-group: 10;
+  -webkit-order: 9;
+  -ms-flex-order: 9;
+  order: 9;
+  padding-top: 5px !important;
+}
+.terms {
+  -webkit-box-ordinal-group: 10;
+  -webkit-order: 9;
+  -ms-flex-order: 9;
+  order: 9;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
